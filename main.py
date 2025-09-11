@@ -2,24 +2,23 @@
 
 import sys
 from PyQt6.QtWidgets import QApplication
-
-# Importa os componentes principais
-from style import STYLESHEET
 from ui.login_dialog import LoginDialog
 from ui.main_window import MainWindow
+from style import STYLESHEET
 
-if __name__ == "__main__":
+def main():
+    """Ponto de entrada principal da aplicação."""
     app = QApplication(sys.argv)
-    app.setStyleSheet(STYLESHEET)
-    
+    app.setStyleSheet(STYLESHEET)  # Aplica o estilo globalmente
+
     login = LoginDialog()
-    
-    # Mostra a tela de login. Se o login for bem-sucedido (login.exec() retorna True)...
+    # A verificação de login é feita dentro da própria classe LoginDialog
     if login.exec():
-        # ...cria e mostra a janela principal.
-        win = MainWindow()
-        win.show()
+        window = MainWindow()
+        window.show()
         sys.exit(app.exec())
     else:
-        # Se o usuário fechar a tela de login, o programa encerra.
         sys.exit(0)
+
+if __name__ == "__main__":
+    main()
