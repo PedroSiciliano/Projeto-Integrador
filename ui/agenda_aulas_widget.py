@@ -7,12 +7,34 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt, QDate
 
-# NOVA CLASSE: Diálogo para agendar uma nova aula
 class AgendarAulaDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Agendar Nova Aula")
         self.setFixedSize(450, 350)
+
+        # --- ALTERAÇÃO AQUI: Define fundo escuro e texto branco para os campos ---
+        self.setStyleSheet("""
+            /* Define fundo escuro, texto branco e bordas para os campos */
+            QComboBox, QDateEdit, QTimeEdit, QSpinBox {
+                background-color: #2b3a4a;
+                color: white;
+                border: 1px solid #4f6987;
+                border-radius: 4px;
+                padding: 4px;
+            }
+            /* Estilo da lista suspensa (fundo branco, texto preto) */
+            QComboBox QAbstractItemView {
+                color: black;
+                background-color: white;
+                selection-background-color: #0078d7;
+                border: 1px solid lightgray;
+            }
+            /* Rótulos com texto branco */
+            QLabel {
+                color: white;
+            }
+        """)
 
         layout = QVBoxLayout(self)
         layout.setSpacing(15)
@@ -24,7 +46,6 @@ class AgendarAulaDialog(QDialog):
         form_layout = QGridLayout()
         form_layout.setSpacing(10)
 
-        # Campos do formulário baseados na tabela `aula`
         form_layout.addWidget(QLabel("Instrutor:"), 0, 0)
         self.combo_instrutor = QComboBox()
         self.combo_instrutor.addItems(["Carlos Souza", "Fernanda Lima", "Ana Costa"])
@@ -57,7 +78,6 @@ class AgendarAulaDialog(QDialog):
         layout.addLayout(form_layout)
         layout.addStretch()
 
-        # Botões de ação
         button_layout = QHBoxLayout()
         button_layout.addStretch()
         btn_cancelar = QPushButton("Cancelar")
@@ -74,12 +94,12 @@ class AgendarAulaDialog(QDialog):
 
 
 class AgendaAulas(QWidget):
+    # ... (código da classe AgendaAulas permanece o mesmo) ...
     def __init__(self):
         super().__init__()
         layout = QVBoxLayout(self)
         layout.setSpacing(15)
 
-        # --- Cabeçalho ---
         header_layout = QHBoxLayout()
         title_layout = QVBoxLayout()
         title = QLabel("Agenda de Aulas")
@@ -93,12 +113,10 @@ class AgendaAulas(QWidget):
         
         btn_agendar = QPushButton("➕ Agendar Nova Aula")
         btn_agendar.setProperty("class", "primary")
-        # CONEXÃO DO SINAL DO BOTÃO
         btn_agendar.clicked.connect(self.abrir_dialog_agendamento)
         header_layout.addWidget(btn_agendar)
         layout.addLayout(header_layout)
 
-        # --- Filtro de Data ---
         filtro_layout = QHBoxLayout()
         filtro_layout.addWidget(QLabel("Selecione a data:"))
         date_edit = QDateEdit(calendarPopup=True)
@@ -107,7 +125,6 @@ class AgendaAulas(QWidget):
         filtro_layout.addStretch()
         layout.addLayout(filtro_layout)
 
-        # --- Tabela de Aulas do Dia ---
         self.tabela_aulas = QTableWidget()
         self.tabela_aulas.setColumnCount(5)
         self.tabela_aulas.setHorizontalHeaderLabels(["Horário Início", "Horário Fim", "Nível", "Instrutor", "Vagas"])
@@ -116,20 +133,12 @@ class AgendaAulas(QWidget):
         self.popular_tabela()
         layout.addWidget(self.tabela_aulas)
 
-    # NOVO MÉTODO: Para abrir o diálogo de agendamento
     def abrir_dialog_agendamento(self):
         dialog = AgendarAulaDialog(self)
-        # O método .exec() abre o diálogo e espera o usuário interagir
         if dialog.exec():
-            # Se o usuário clicou em "Salvar" (accept), o .exec() retorna True
-            # Aqui você adicionaria a lógica para salvar os dados no banco de dados.
-            # Por enquanto, vamos apenas mostrar uma mensagem de sucesso.
             QMessageBox.information(self, "Sucesso", "Nova aula agendada com sucesso!")
-            # Idealmente, aqui você também atualizaria a tabela de aulas.
-            # self.popular_tabela() 
 
     def popular_tabela(self):
-        """Popula a tabela com dados mock para o dia selecionado."""
         dados_aulas = [
             ("08:00", "09:00", "Iniciante Infantil", "Carlos Souza", "5/8"),
             ("10:00", "11:00", "Avançado Adulto", "Fernanda Lima", "10/10"),

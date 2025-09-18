@@ -4,7 +4,6 @@ from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableWidget, QHeaderView,
     QTableWidgetItem, QComboBox, QDateEdit, QPushButton, QDialog, QMessageBox
 )
-# CORREÇÃO: Adicionado QDate à importação
 from PyQt6.QtCore import Qt, QDateTime, QDate
 
 class PontoDialog(QDialog):
@@ -12,6 +11,23 @@ class PontoDialog(QDialog):
         super().__init__(parent)
         self.setWindowTitle(f"Registrar {tipo_registro}")
         self.setFixedSize(400, 250)
+        
+        # --- ALTERAÇÃO AQUI: Folha de estilo para cores de texto ---
+        self.setStyleSheet("""
+            /* Cor do texto branca para a caixa principal */
+            QComboBox {
+                color: white;
+            }
+            /* Cor do texto preta para a lista suspensa (fundo branco) */
+            QComboBox QAbstractItemView {
+                color: black;
+                background-color: white;
+            }
+            /* Garante que os rótulos fiquem brancos */
+            QLabel {
+                color: white;
+            }
+        """)
 
         layout = QVBoxLayout(self)
         layout.setSpacing(15)
@@ -44,6 +60,7 @@ class PontoDialog(QDialog):
         layout.addLayout(button_layout)
 
 class FolhaDePonto(QWidget):
+    # ... (código da classe FolhaDePonto permanece o mesmo) ...
     def __init__(self):
         super().__init__()
         layout = QVBoxLayout(self)
@@ -65,7 +82,6 @@ class FolhaDePonto(QWidget):
         filtros.setSpacing(10)
         filtros.addWidget(QLabel("Data:"))
         date_edit = QDateEdit(calendarPopup=True)
-        # Esta linha agora funciona porque QDate foi importado
         date_edit.setDate(QDate.currentDate())
         filtros.addWidget(date_edit)
         filtros.addStretch()

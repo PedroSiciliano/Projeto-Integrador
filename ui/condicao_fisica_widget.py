@@ -9,6 +9,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, QDate
 
 class CondicaoFisica(QWidget):
+    # ... (código da classe CondicaoFisica permanece o mesmo) ...
     def __init__(self):
         super().__init__()
         layout = QVBoxLayout(self)
@@ -36,10 +37,20 @@ class CondicaoFisica(QWidget):
         
         label_alunos = QLabel("Alunos")
         label_alunos.setObjectName("ListCardTitle")
+        
+        self.filtro_alunos = QLineEdit()
+        self.filtro_alunos.setPlaceholderText("Buscar aluno...")
+        self.filtro_alunos.textChanged.connect(self.filtrar_lista_alunos)
+        
         self.lista_alunos = QListWidget()
         self.lista_alunos.setObjectName("DashboardList")
-        self.lista_alunos.addItems(["Pedro Oliveira", "Julia Mendes"])
+        self.lista_alunos.addItems([
+            "Pedro Oliveira", "Julia Mendes", "Marcos Andrade", 
+            "Lívia Costa", "Rafael Souza", "Ana Clara"
+        ])
+        
         left_layout.addWidget(label_alunos)
+        left_layout.addWidget(self.filtro_alunos)
         left_layout.addWidget(self.lista_alunos)
         
         # --- Painel da Direita: Detalhes do Aluno ---
@@ -47,7 +58,6 @@ class CondicaoFisica(QWidget):
         right_panel.setProperty("class", "CardFrame")
         right_layout = QVBoxLayout(right_panel)
         
-        # Tabela com as condições registradas
         tabela_condicoes = QTableWidget()
         tabela_condicoes.setColumnCount(4)
         tabela_condicoes.setHorizontalHeaderLabels(["Tipo", "Descrição", "Severidade", "Data de Atualização"])
@@ -61,7 +71,6 @@ class CondicaoFisica(QWidget):
         
         right_layout.addWidget(tabela_condicoes)
         
-        # Botão para adicionar nova condição
         btn_layout = QHBoxLayout()
         btn_layout.addStretch()
         btn_nova_condicao = QPushButton("➕ Registrar Nova Condição")
@@ -75,15 +84,46 @@ class CondicaoFisica(QWidget):
 
         layout.addLayout(main_layout)
 
+    def filtrar_lista_alunos(self):
+        texto_filtro = self.filtro_alunos.text().lower()
+        for i in range(self.lista_alunos.count()):
+            item = self.lista_alunos.item(i)
+            nome_aluno = item.text().lower()
+            item.setHidden(texto_filtro not in nome_aluno)
+
     def abrir_dialog_registro(self):
         dialog = RegistrarCondicaoDialog(self)
         dialog.exec()
+
 
 class RegistrarCondicaoDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Registrar Condição de Saúde")
         self.setFixedSize(500, 450)
+        
+        # --- ALTERAÇÃO AQUI: Define fundo escuro e texto branco para os campos ---
+        self.setStyleSheet("""
+            /* Define fundo escuro, texto branco e bordas para os campos */
+            QLineEdit, QTextEdit, QComboBox {
+                background-color: #2b3a4a;
+                color: white;
+                border: 1px solid #4f6987;
+                border-radius: 4px;
+                padding: 4px;
+            }
+            /* Estilo da lista suspensa (fundo branco, texto preto) */
+            QComboBox QAbstractItemView {
+                color: black;
+                background-color: white;
+                selection-background-color: #0078d7;
+                border: 1px solid lightgray;
+            }
+            /* Rótulos e checkboxes com texto branco */
+            QLabel, QCheckBox {
+                color: white;
+            }
+        """)
         
         layout = QVBoxLayout(self)
         layout.setSpacing(15)
