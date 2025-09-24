@@ -13,8 +13,8 @@ from ui.alunos_widgets import ListaAlunos, NovoAluno
 from ui.ponto_widgets import FolhaDePonto
 from ui.condicao_fisica_widget import CondicaoFisica
 from ui.agenda_aulas_widget import AgendaAulas
-# NOVA IMPORTAÇÃO
 from ui.instrutores_widget import ListaInstrutores, NovoInstrutor
+from ui.despesas_widget import Despesas
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -42,7 +42,6 @@ class MainWindow(QMainWindow):
 
         self.menu = QListWidget()
         self.menu.setObjectName("SidebarMenu")
-        self.menu.setIconSize(QSize(20, 20))
         self.sidebar_layout.addWidget(self.menu)
 
         # --- Área de Conteúdo (Stacked Widget) ---
@@ -60,48 +59,36 @@ class MainWindow(QMainWindow):
         self.dashboard_page = Dashboard()
         self.alunos_page = ListaAlunos()
         self.novo_aluno_page = NovoAluno()
-        self.financeiro_page = Financeiro()
-        self.ponto_page = FolhaDePonto()
-        self.condicao_fisica_page = CondicaoFisica()
-        self.agenda_page = AgendaAulas()
-        # NOVAS PÁGINAS
         self.instrutores_page = ListaInstrutores()
         self.novo_instrutor_page = NovoInstrutor()
+        self.condicao_fisica_page = CondicaoFisica()
+        self.agenda_page = AgendaAulas()
+        self.ponto_page = FolhaDePonto()
+        self.financeiro_page = Financeiro()
+        self.despesas_page = Despesas()
 
-        # Dicionário de páginas atualizado
+        # Dicionário de páginas
         self.pages = {
             "Dashboard": self.stack.addWidget(self.dashboard_page),
             "Alunos": self.stack.addWidget(self.alunos_page),
-            "Instrutores": self.stack.addWidget(self.instrutores_page), # NOVO ITEM NO MENU
+            "Instrutores": self.stack.addWidget(self.instrutores_page),
             "Condições de Saúde": self.stack.addWidget(self.condicao_fisica_page),
             "Agenda de Aulas": self.stack.addWidget(self.agenda_page),
             "Folha de Ponto": self.stack.addWidget(self.ponto_page),
             "Financeiro": self.stack.addWidget(self.financeiro_page),
+            "Despesas": self.stack.addWidget(self.despesas_page),
         }
         
-        # Páginas de formulário não ficam no menu principal
         self.stack.addWidget(self.novo_aluno_page)
-        self.stack.addWidget(self.novo_instrutor_page) # ADICIONADO AO STACK
+        self.stack.addWidget(self.novo_instrutor_page)
 
         # --- Conexões de Sinais ---
         self.populate_menu()
         self.menu.currentItemChanged.connect(self.change_page)
-        
-        self.alunos_page.btn_cadastrar.clicked.connect(
-            lambda: self.stack.setCurrentWidget(self.novo_aluno_page)
-        )
-        self.novo_aluno_page.back_requested.connect(
-            lambda: self.stack.setCurrentWidget(self.alunos_page)
-        )
-
-        # NOVAS CONEXÕES
-        self.instrutores_page.btn_cadastrar_clicked.connect(
-            lambda: self.stack.setCurrentWidget(self.novo_instrutor_page)
-        )
-        self.novo_instrutor_page.back_requested.connect(
-            lambda: self.stack.setCurrentWidget(self.instrutores_page)
-        )
-
+        self.alunos_page.btn_cadastrar_clicked.connect(lambda: self.stack.setCurrentWidget(self.novo_aluno_page))
+        self.novo_aluno_page.back_requested.connect(lambda: self.stack.setCurrentWidget(self.alunos_page))
+        self.instrutores_page.btn_cadastrar_clicked.connect(lambda: self.stack.setCurrentWidget(self.novo_instrutor_page))
+        self.novo_instrutor_page.back_requested.connect(lambda: self.stack.setCurrentWidget(self.instrutores_page))
         self.menu.setCurrentRow(0)
 
     def populate_menu(self):
