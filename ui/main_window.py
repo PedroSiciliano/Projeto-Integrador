@@ -11,9 +11,10 @@ from ui.dashboard_widget import Dashboard
 from ui.financeiro_widget import Financeiro
 from ui.alunos_widgets import ListaAlunos, NovoAluno
 from ui.ponto_widgets import FolhaDePonto
-# Widgets atualizados e novos
 from ui.condicao_fisica_widget import CondicaoFisica
 from ui.agenda_aulas_widget import AgendaAulas
+# NOVA IMPORTAÇÃO
+from ui.instrutores_widget import ListaInstrutores, NovoInstrutor
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -63,19 +64,24 @@ class MainWindow(QMainWindow):
         self.ponto_page = FolhaDePonto()
         self.condicao_fisica_page = CondicaoFisica()
         self.agenda_page = AgendaAulas()
+        # NOVAS PÁGINAS
+        self.instrutores_page = ListaInstrutores()
+        self.novo_instrutor_page = NovoInstrutor()
 
-        # Dicionário de páginas atualizado com os nomes corretos
+        # Dicionário de páginas atualizado
         self.pages = {
             "Dashboard": self.stack.addWidget(self.dashboard_page),
             "Alunos": self.stack.addWidget(self.alunos_page),
+            "Instrutores": self.stack.addWidget(self.instrutores_page), # NOVO ITEM NO MENU
             "Condições de Saúde": self.stack.addWidget(self.condicao_fisica_page),
             "Agenda de Aulas": self.stack.addWidget(self.agenda_page),
             "Folha de Ponto": self.stack.addWidget(self.ponto_page),
             "Financeiro": self.stack.addWidget(self.financeiro_page),
         }
         
-        # Página de "Novo Aluno" não fica no menu principal
+        # Páginas de formulário não ficam no menu principal
         self.stack.addWidget(self.novo_aluno_page)
+        self.stack.addWidget(self.novo_instrutor_page) # ADICIONADO AO STACK
 
         # --- Conexões de Sinais ---
         self.populate_menu()
@@ -84,9 +90,16 @@ class MainWindow(QMainWindow):
         self.alunos_page.btn_cadastrar.clicked.connect(
             lambda: self.stack.setCurrentWidget(self.novo_aluno_page)
         )
-
         self.novo_aluno_page.back_requested.connect(
             lambda: self.stack.setCurrentWidget(self.alunos_page)
+        )
+
+        # NOVAS CONEXÕES
+        self.instrutores_page.btn_cadastrar_clicked.connect(
+            lambda: self.stack.setCurrentWidget(self.novo_instrutor_page)
+        )
+        self.novo_instrutor_page.back_requested.connect(
+            lambda: self.stack.setCurrentWidget(self.instrutores_page)
         )
 
         self.menu.setCurrentRow(0)

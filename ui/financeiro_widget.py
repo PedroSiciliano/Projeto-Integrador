@@ -9,10 +9,9 @@ class Financeiro(QWidget):
         layout.setSpacing(15)
 
         title = QLabel("Controle Financeiro")
+        # ... (código do cabeçalho permanece o mesmo) ...
         title.setObjectName("Title")
         subtitle = QLabel("Acompanhe as mensalidades e o status de pagamento dos alunos")
-        subtitle.setObjectName("Subtitle")
-
         header_layout = QVBoxLayout()
         header_layout.addWidget(title)
         header_layout.addWidget(subtitle)
@@ -20,6 +19,35 @@ class Financeiro(QWidget):
         layout.addLayout(header_layout)
 
         table = QTableWidget()
+
+        # --- ESTILO DA TABELA APLICADO AQUI ---
+        table.setStyleSheet("""
+            QTableWidget {
+                background-color: #1e293b;
+                alternate-background-color: #2b3a4a;
+                border: none;
+                gridline-color: #4f6987;
+            }
+            QTableWidget::viewport {
+                background-color: #1e293b;
+                border: none;
+            }
+            QHeaderView::section {
+                background-color: #2b3a4a;
+                color: #94a3b8;
+                padding: 4px;
+                border: none;
+                border-bottom: 1px solid #4f6987;
+            }
+            QHeaderView::section:horizontal {
+                border-right: 1px solid #4f6987;
+            }
+            QTableCornerButton::section {
+                background-color: #2b3a4a;
+            }
+        """)
+        table.setAlternatingRowColors(True)
+
         table.verticalHeader().setVisible(False)
         table.setColumnCount(5)
         table.setHorizontalHeaderLabels(["Aluno", "Plano", "Valor", "Vencimento", "Status"])
@@ -33,18 +61,18 @@ class Financeiro(QWidget):
 
         table.setRowCount(len(dados))
         for i, (aluno, plano, valor, venc, status) in enumerate(dados):
+            # ... (código de preenchimento da tabela permanece o mesmo) ...
             table.setItem(i, 0, QTableWidgetItem(aluno))
             table.setItem(i, 1, QTableWidgetItem(plano))
             table.setItem(i, 2, QTableWidgetItem(valor))
             table.setItem(i, 3, QTableWidgetItem(venc))
-            
             status_item = QTableWidgetItem(status)
             if status == "Pago":
-                status_item.setForeground(QColor("#5eead4"))
+                status_item.setForeground(QColor("#22c55e"))
             elif status == "Atrasado":
-                status_item.setForeground(QColor("#f87171"))
-            elif status == "Pendente":
+                status_item.setForeground(QColor("#ef4444"))
+            else:
                 status_item.setForeground(QColor("#facc15"))
             table.setItem(i, 4, status_item)
-
+            
         layout.addWidget(table)
