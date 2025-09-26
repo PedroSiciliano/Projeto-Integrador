@@ -1,18 +1,7 @@
 # perfect_acqua_system/ui/dashboard_widget.py
-<<<<<<< HEAD
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QFrame, QGridLayout, QTableWidget, QTableWidgetItem, QHeaderView, QProgressBar, QListWidget
 from PyQt6.QtGui import QFont
 import database
-=======
-
-from PyQt6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QLabel, QListWidget, QFrame, 
-    QGridLayout, QListWidgetItem, QTableWidget, QTableWidgetItem, 
-    QHeaderView, QProgressBar
-)
-from PyQt6.QtGui import QFont, QColor
-from PyQt6.QtCore import Qt
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
 
 class Dashboard(QWidget):
     def __init__(self):
@@ -24,10 +13,6 @@ class Dashboard(QWidget):
         title = QLabel("Dashboard")
         title.setObjectName("Title")
         subtitle = QLabel("Visão geral do sistema Perfect Acqua")
-<<<<<<< HEAD
-=======
-        subtitle.setObjectName("Subtitle")
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         title_layout.addWidget(title)
         title_layout.addWidget(subtitle)
         layout.addLayout(title_layout)
@@ -35,7 +20,6 @@ class Dashboard(QWidget):
         main_grid = QGridLayout()
         main_grid.setSpacing(20)
 
-<<<<<<< HEAD
         self.cards_grid = QGridLayout()
         main_grid.addLayout(self.cards_grid, 0, 0, 1, 2)
 
@@ -61,24 +45,6 @@ class Dashboard(QWidget):
         
         self.update_balance_card()
         self.popular_tabela_aulas()
-=======
-        cards_grid = QGridLayout()
-        cards_grid.setSpacing(20)
-        cards_grid.addWidget(self._create_summary_card("👥", "Total de Alunos", "4", "#5eead4"), 0, 0)
-        cards_grid.addWidget(self._create_summary_card("💰", "Receita do Mês", "R$ 750,00", "#67e8f9"), 0, 1)
-        cards_grid.addWidget(self._create_summary_card("💸", "Despesas do Mês", "R$ 200,00", "#f87171"), 0, 2)
-        main_grid.addLayout(cards_grid, 0, 0, 1, 2)
-
-        main_grid.addWidget(self._create_tasks_list(), 1, 0)
-        main_grid.addWidget(self._create_monthly_balance_card(), 1, 1)
-        main_grid.addWidget(self._create_upcoming_classes_table(), 2, 0, 1, 2)
-        
-        main_grid.setColumnStretch(0, 1)
-        main_grid.setColumnStretch(1, 1)
-        main_grid.setRowStretch(2, 1)
-
-        layout.addLayout(main_grid)
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
 
     def _create_summary_card(self, icon, title, value, color):
         card = QFrame()
@@ -98,10 +64,7 @@ class Dashboard(QWidget):
         layout.addLayout(text_layout)
         return card
 
-<<<<<<< HEAD
     # --- CORREÇÃO: Método para criar a lista de Tarefas Rápidas ---
-=======
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
     def _create_tasks_list(self):
         frame = QFrame()
         frame.setProperty("class", "CardFrame")
@@ -110,21 +73,11 @@ class Dashboard(QWidget):
         title.setObjectName("ListCardTitle")
         layout.addWidget(title)
         task_list = QListWidget()
-<<<<<<< HEAD
         task_list.addItems(["✔ Confirmar pagamentos pendentes", "📋 Cadastrar novas despesas", "📅 Agendar próximas aulas"])
-=======
-        task_list.setObjectName("DashboardList")
-        task_list.addItems([
-            "✔ Confirmar pagamento de João Santos",
-            "📞 Ligar para responsável de Ana (menor)",
-            "📋 Renovar avaliação física de Pedro Oliveira"
-        ])
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         layout.addWidget(task_list)
         return frame
 
     def _create_monthly_balance_card(self):
-<<<<<<< HEAD
         self.balance_frame = QFrame()
         self.balance_frame.setProperty("class", "CardFrame")
         layout = QVBoxLayout(self.balance_frame)
@@ -142,42 +95,16 @@ class Dashboard(QWidget):
         total = self.receita_mes + self.despesas_mes
         self.balance_grid.addWidget(self._create_progress_indicator("Entradas", self.receita_mes, total, "#22c55e"), 0, 0)
         self.balance_grid.addWidget(self._create_progress_indicator("Saídas", self.despesas_mes, total, "#ef4444"), 0, 1)
-=======
-        frame = QFrame()
-        frame.setProperty("class", "CardFrame")
-        layout = QVBoxLayout(frame)
-        title = QLabel("Balanço do Mês")
-        title.setObjectName("ListCardTitle")
-        layout.addWidget(title)
-        
-        entradas = 750.00
-        saidas = 200.00
-        total = entradas
-        
-        grid = QGridLayout()
-        grid.addWidget(self._create_progress_indicator("Entradas", entradas, total, "#22c55e"), 0, 0)
-        grid.addWidget(self._create_progress_indicator("Saídas", saidas, total, "#ef4444"), 0, 1)
-        layout.addLayout(grid)
-        return frame
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
 
     def _create_progress_indicator(self, title, value, total, color):
         indicator_frame = QFrame()
         layout = QVBoxLayout(indicator_frame)
-<<<<<<< HEAD
-=======
-        layout.setSpacing(5)
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         title_label = QLabel(title)
         value_label = QLabel(f"R$ {value:,.2f}")
         value_label.setFont(QFont("Segoe UI", 16, QFont.Weight.Bold))
         value_label.setStyleSheet(f"color: {color};")
         progress_bar = QProgressBar()
-<<<<<<< HEAD
         progress_bar.setMaximum(int(total) if total > 0 else 100)
-=======
-        progress_bar.setMaximum(int(total))
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         progress_bar.setValue(int(value))
         progress_bar.setTextVisible(False)
         progress_bar.setStyleSheet(f"""
@@ -196,7 +123,6 @@ class Dashboard(QWidget):
         title = QLabel("Próximas Aulas")
         title.setObjectName("ListCardTitle")
         layout.addWidget(title)
-<<<<<<< HEAD
         
         self.table_aulas = QTableWidget()
         self.table_aulas.setColumnCount(3)
@@ -212,20 +138,3 @@ class Dashboard(QWidget):
         for row, data_row in enumerate(dados):
             for col, data_cell in enumerate(data_row):
                 self.table_aulas.setItem(row, col, QTableWidgetItem(data_cell))
-=======
-        table = QTableWidget()
-        table.setColumnCount(3)
-        table.setHorizontalHeaderLabels(["Horário", "Turma", "Instrutor"])
-        table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
-        table.verticalHeader().setVisible(False)
-        dados = [
-            ("Hoje, 18:00", "Avançado Adulto", "Fernanda Lima"),
-            ("Amanhã, 09:00", "Iniciante Infantil", "Carlos Souza")
-        ]
-        table.setRowCount(len(dados))
-        for row, data_row in enumerate(dados):
-            for col, data_cell in enumerate(data_row):
-                table.setItem(row, col, QTableWidgetItem(data_cell))
-        layout.addWidget(table)
-        return frame
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6

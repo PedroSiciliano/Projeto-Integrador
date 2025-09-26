@@ -1,17 +1,6 @@
 # perfect_acqua_system/ui/main_window.py
-<<<<<<< HEAD
 from PyQt6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget, QFrame, QLabel, QListWidget, QListWidgetItem
 
-=======
-
-from PyQt6.QtWidgets import (
-    QMainWindow, QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget, 
-    QFrame, QLabel, QListWidget, QListWidgetItem
-)
-from PyQt6.QtCore import QSize
-
-# Importando as telas (widgets)
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
 from ui.dashboard_widget import Dashboard
 from ui.financeiro_widget import Financeiro
 from ui.alunos_widgets import ListaAlunos, NovoAluno
@@ -34,10 +23,6 @@ class MainWindow(QMainWindow):
         main_layout.setSpacing(10)
         self.setCentralWidget(main_widget)
 
-<<<<<<< HEAD
-=======
-        # --- Sidebar (Menu Lateral) ---
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         sidebar_frame = QFrame()
         sidebar_frame.setObjectName("Sidebar")
         sidebar_frame.setFixedWidth(220)
@@ -47,15 +32,10 @@ class MainWindow(QMainWindow):
         title = QLabel("Perfect Acqua")
         title.setObjectName("SidebarTitle")
         self.sidebar_layout.addWidget(title)
-<<<<<<< HEAD
-=======
-
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         self.menu = QListWidget()
         self.menu.setObjectName("SidebarMenu")
         self.sidebar_layout.addWidget(self.menu)
 
-<<<<<<< HEAD
         self.content_frame = QFrame()
         self.content_frame.setObjectName("ContentFrame")
         content_layout = QVBoxLayout(self.content_frame)
@@ -64,20 +44,6 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(sidebar_frame)
         main_layout.addWidget(self.content_frame, 1)
 
-=======
-        # --- Área de Conteúdo (Stacked Widget) ---
-        self.content_frame = QFrame()
-        self.content_frame.setObjectName("ContentFrame")
-        content_layout = QVBoxLayout(self.content_frame)
-        
-        self.stack = QStackedWidget()
-        content_layout.addWidget(self.stack)
-
-        main_layout.addWidget(sidebar_frame)
-        main_layout.addWidget(self.content_frame, 1)
-
-        # --- Páginas ---
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         self.dashboard_page = Dashboard()
         self.alunos_page = ListaAlunos()
         self.novo_aluno_page = NovoAluno()
@@ -89,10 +55,6 @@ class MainWindow(QMainWindow):
         self.financeiro_page = Financeiro()
         self.despesas_page = Despesas()
 
-<<<<<<< HEAD
-=======
-        # Dicionário de páginas
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         self.pages = {
             "Dashboard": self.stack.addWidget(self.dashboard_page),
             "Alunos": self.stack.addWidget(self.alunos_page),
@@ -103,7 +65,6 @@ class MainWindow(QMainWindow):
             "Financeiro": self.stack.addWidget(self.financeiro_page),
             "Despesas": self.stack.addWidget(self.despesas_page),
         }
-<<<<<<< HEAD
 
         self.stack.addWidget(self.novo_aluno_page)
         self.stack.addWidget(self.novo_instrutor_page)
@@ -134,19 +95,6 @@ class MainWindow(QMainWindow):
         
         self.agenda_page.aula_salva.connect(self.agenda_page.popular_tabela)
 
-=======
-        
-        self.stack.addWidget(self.novo_aluno_page)
-        self.stack.addWidget(self.novo_instrutor_page)
-
-        # --- Conexões de Sinais ---
-        self.populate_menu()
-        self.menu.currentItemChanged.connect(self.change_page)
-        self.alunos_page.btn_cadastrar_clicked.connect(lambda: self.stack.setCurrentWidget(self.novo_aluno_page))
-        self.novo_aluno_page.back_requested.connect(lambda: self.stack.setCurrentWidget(self.alunos_page))
-        self.instrutores_page.btn_cadastrar_clicked.connect(lambda: self.stack.setCurrentWidget(self.novo_instrutor_page))
-        self.novo_instrutor_page.back_requested.connect(lambda: self.stack.setCurrentWidget(self.instrutores_page))
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
         self.menu.setCurrentRow(0)
 
     def populate_menu(self):
@@ -159,9 +107,6 @@ class MainWindow(QMainWindow):
             page_name = current_item.text()
             index = self.pages.get(page_name)
             if index is not None:
-<<<<<<< HEAD
                 if self.stack.widget(index) == self.dashboard_page:
                     self.dashboard_page.refresh_data()
-=======
->>>>>>> b5fde65adc1279d3f005b38aa1643af8c14e1ce6
                 self.stack.setCurrentIndex(index)
