@@ -1,0 +1,343 @@
+2025-11-28T17:04:45.795238 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:04:45.816423 - Fallback schema ensured
+2025-11-28T17:04:47.687841 - supabase_helpers imported
+2025-11-28T17:12:32.920082 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:12:32.921817 - Fallback schema ensured
+2025-11-28T17:12:34.551694 - supabase_helpers imported
+2025-11-28T17:13:13.314918 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:13:13.315840 - Fallback schema ensured
+2025-11-28T17:13:14.919958 - supabase_helpers imported
+2025-11-28T17:13:43.750072 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:13:43.751665 - Fallback schema ensured
+2025-11-28T17:13:44.787779 - supabase_helpers imported
+2025-11-28T17:14:13.795291 - registrar_ponto fallback inserted id=1
+2025-11-28T17:14:22.329518 - registrar_ponto fallback inserted id=2
+2025-11-28T17:33:38.142373 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:33:38.143549 - Fallback schema ensured
+2025-11-28T17:33:39.355225 - supabase_helpers imported
+2025-11-28T17:37:30.206092 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:37:30.207094 - Fallback schema ensured
+2025-11-28T17:37:31.320468 - supabase_helpers imported
+2025-11-28T17:42:50.527363 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:42:50.528490 - Fallback schema ensured
+2025-11-28T17:42:52.214711 - supabase_helpers imported
+2025-11-28T17:44:25.087055 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:44:25.088327 - Fallback schema ensured
+2025-11-28T17:44:26.068764 - supabase_helpers imported
+2025-11-28T17:46:43.726926 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:46:43.728129 - Fallback schema ensured
+2025-11-28T17:46:44.717388 - supabase_helpers imported
+2025-11-28T17:53:00.068800 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:53:00.079265 - Fallback schema ensured
+2025-11-28T17:53:01.173913 - supabase_helpers imported
+2025-11-28T17:53:13.144345 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:53:13.145461 - Fallback schema ensured
+2025-11-28T17:53:14.439848 - supabase_helpers imported
+2025-11-28T17:53:58.825296 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-11-28T17:53:58.830227 - registrar_ponto fallback inserted id=3
+2025-11-28T17:55:55.008378 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:55:55.009720 - Fallback schema ensured
+2025-11-28T17:55:56.244558 - supabase_helpers imported
+2025-11-28T17:56:43.813809 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T17:56:43.815118 - Fallback schema ensured
+2025-11-28T17:56:44.833597 - supabase_helpers imported
+2025-11-28T18:01:34.267599 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:01:34.268942 - Fallback schema ensured
+2025-11-28T18:01:35.274062 - supabase_helpers imported
+2025-11-28T18:02:12.332097 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:02:12.334020 - Fallback schema ensured
+2025-11-28T18:02:13.482813 - supabase_helpers imported
+2025-11-28T18:03:21.523001 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-11-28T18:03:21.527934 - registrar_ponto fallback inserted id=4
+2025-11-28T18:03:33.838675 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-11-28T18:03:33.844286 - registrar_ponto fallback inserted id=5
+2025-11-28T18:06:03.881650 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:06:03.882872 - Fallback schema ensured
+2025-11-28T18:06:05.000905 - supabase_helpers imported
+2025-11-28T18:06:11.231816 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:06:11.232932 - Fallback schema ensured
+2025-11-28T18:06:12.265337 - supabase_helpers imported
+2025-11-28T18:24:04.965810 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:24:04.967536 - Fallback schema ensured
+2025-11-28T18:24:06.938874 - supabase_helpers imported
+2025-11-28T18:24:08.621662 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:24:08.622884 - Fallback schema ensured
+2025-11-28T18:24:09.669629 - supabase_helpers imported
+2025-11-28T18:24:10.670852 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:24:10.672409 - Fallback schema ensured
+2025-11-28T18:24:11.753450 - supabase_helpers imported
+2025-11-28T18:24:12.931290 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:24:12.932436 - Fallback schema ensured
+2025-11-28T18:24:14.001023 - supabase_helpers imported
+2025-11-28T18:26:34.102402 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:26:34.103891 - Fallback schema ensured
+2025-11-28T18:26:35.172790 - supabase_helpers imported
+2025-11-28T18:26:38.792490 - listar_registros_ponto sqlite fallback error: no such column: entrada
+2025-11-28T18:26:38.987236 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:26:38.988193 - Fallback schema ensured
+2025-11-28T18:26:40.034524 - supabase_helpers imported
+2025-11-28T18:26:41.334809 - _wrap_call error for get_aulas_por_data: get_aulas_por_data() missing 1 required positional argument: 'data_str'
+2025-11-28T18:26:41.860284 - _wrap_call error for get_proximas_aulas: get_proximas_aulas() takes from 0 to 1 positional arguments but 2 were given
+2025-11-28T18:26:42.024049 - _wrap_call error for get_aulas_por_data: get_aulas_por_data() missing 1 required positional argument: 'data_str'
+2025-11-28T18:29:58.052583 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:29:58.053979 - Fallback schema ensured
+2025-11-28T18:29:59.133338 - supabase_helpers imported
+2025-11-28T18:30:00.170274 - listar_registros_ponto sqlite fallback error: no such column: entrada
+2025-11-28T18:30:15.681691 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:30:15.683095 - Fallback schema ensured
+2025-11-28T18:30:16.712423 - supabase_helpers imported
+2025-11-28T18:31:06.212385 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:31:06.213838 - Fallback schema ensured
+2025-11-28T18:31:07.318545 - supabase_helpers imported
+2025-11-28T18:31:30.715252 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-11-28T18:31:30.721465 - registrar_ponto fallback inserted id=6
+2025-11-28T18:31:46.786721 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-11-28T18:31:46.792067 - registrar_ponto fallback inserted id=7
+2025-11-28T18:34:08.930174 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:34:08.931507 - Fallback schema ensured
+2025-11-28T18:34:10.037188 - supabase_helpers imported
+2025-11-28T18:34:10.040216 - registrar_ponto sqlite insert error: table ponto has no column named synced
+2025-11-28T18:40:09.135535 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:40:09.137223 - Fallback schema ensured
+2025-11-28T18:40:10.878719 - supabase_helpers imported
+2025-11-28T18:40:18.217384 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:40:18.218851 - Fallback schema ensured
+2025-11-28T18:40:19.237271 - supabase_helpers imported
+2025-11-28T18:57:09.105908 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:57:09.107318 - Fallback schema ensured
+2025-11-28T18:57:10.140996 - supabase_helpers imported
+2025-11-28T18:58:33.684530 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-11-28T18:58:33.685822 - Fallback schema ensured
+2025-11-28T18:58:34.729204 - supabase_helpers imported
+2025-12-01T16:31:21.809848 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:31:21.825319 - Fallback schema ensured
+2025-12-01T16:31:23.568077 - supabase_helpers imported
+2025-12-01T16:32:48.334527 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:32:48.336111 - Fallback schema ensured
+2025-12-01T16:32:49.331726 - supabase_helpers imported
+2025-12-01T16:32:56.241014 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:32:56.241501 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:32:56.712024 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:32:56.712563 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:32:56.713531 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:32:57.265901 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:32:57.266734 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:32:57.267450 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:32:58.138001 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:32:58.139666 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:35:00.726275 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:00.726833 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:00.727286 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:00.727654 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:00.925702 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:35:00.927446 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:35:01.299998 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:01.300565 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:01.301084 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:35:01.301639 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:04.870570 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:36:04.872064 - Fallback schema ensured
+2025-12-01T16:36:05.901021 - supabase_helpers imported
+2025-12-01T16:36:11.881588 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:36:11.882197 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:36:12.280376 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.281063 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.281655 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.282160 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.787372 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.788926 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.790390 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:12.792000 - listar_alunos normalize error: name '_normalize_aluno' is not defined
+2025-12-01T16:36:13.705456 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:36:13.706387 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:36:18.995355 - _wrap_call error for add_ponto: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.055404 - registrar_ponto: supabase helper add_ponto error: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.223233 - _wrap_call error for insert_ponto: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.224997 - registrar_ponto: supabase helper insert_ponto error: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.376002 - _wrap_call error for create_ponto: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.378030 - registrar_ponto: supabase helper create_ponto error: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.531287 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:19.549825 - Enqueued op ponto client_id=f82c48d1-6b0c-4be1-82ca-798dea30bcb8
+2025-12-01T16:36:19.550323 - registrar_ponto fallback inserted id=9 enqueued client_id=f82c48d1-6b0c-4be1-82ca-798dea30bcb8
+2025-12-01T16:36:27.875850 - _wrap_call error for add_ponto: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:27.878874 - registrar_ponto: supabase helper add_ponto error: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:28.032932 - _wrap_call error for insert_ponto: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:28.037358 - registrar_ponto: supabase helper insert_ponto error: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:28.194715 - _wrap_call error for create_ponto: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:28.196942 - registrar_ponto: supabase helper create_ponto error: {'message': "Could not find the 'id_funcionario' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:28.355221 - registrar_ponto -> supabase client insert failed: {'message': "Could not find the 'hora' column of 'ponto' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-12-01T16:36:28.367814 - Enqueued op ponto client_id=eca502ef-f939-42a1-aa90-a0a05c31dde1
+2025-12-01T16:36:28.368262 - registrar_ponto fallback inserted id=10 enqueued client_id=eca502ef-f939-42a1-aa90-a0a05c31dde1
+2025-12-01T16:37:25.646725 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:37:25.647246 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:37:29.166599 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:37:29.167174 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:07.517876 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:47:07.519118 - Fallback schema ensured
+2025-12-01T16:47:09.105309 - supabase_helpers imported
+2025-12-01T16:47:09.139893 - Background sync started
+2025-12-01T16:47:11.317398 - process_pending_ops: op id=1 (ponto) synced successfully
+2025-12-01T16:47:11.533450 - process_pending_ops: op id=2 (ponto) synced successfully
+2025-12-01T16:47:11.534123 - sync_worker: processed 2 pending ops
+2025-12-01T16:47:18.266697 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:18.268295 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:18.777213 - _wrap_call error for get_instrutores: get_instrutores() takes 0 positional arguments but 1 was given
+2025-12-01T16:47:19.937537 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:19.938161 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:24.335629 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:24.336249 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:25.638979 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:25.639504 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:47:55.883517 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:47:55.884868 - Fallback schema ensured
+2025-12-01T16:47:56.885355 - supabase_helpers imported
+2025-12-01T16:47:56.897495 - Background sync started
+2025-12-01T16:48:01.304688 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:48:01.305262 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:48:01.740924 - _wrap_call error for get_instrutores: get_instrutores() takes 0 positional arguments but 1 was given
+2025-12-01T16:48:02.726124 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:48:02.726715 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:48:17.499873 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:48:17.501381 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:51:21.965216 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:51:21.966380 - Fallback schema ensured
+2025-12-01T16:51:22.950882 - supabase_helpers imported
+2025-12-01T16:51:22.963760 - Background sync started
+2025-12-01T16:51:32.327653 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:51:32.328128 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:51:33.831481 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:51:33.832030 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:51:59.001747 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:51:59.002273 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:52:50.636144 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:52:50.637374 - Fallback schema ensured
+2025-12-01T16:52:51.623167 - supabase_helpers imported
+2025-12-01T16:52:51.636004 - Background sync started
+2025-12-01T16:52:57.142479 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:52:57.143102 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:52:58.630045 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:52:58.630691 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:56:24.216896 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T16:56:24.218128 - Fallback schema ensured
+2025-12-01T16:56:25.224012 - supabase_helpers imported
+2025-12-01T16:56:25.260892 - Background sync started
+2025-12-01T16:56:31.038931 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:56:31.039588 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:56:32.386104 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:56:32.387723 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T16:56:40.553500 - buscar_aulas_com_id_por_data normalize error: name '_normalize_aula' is not defined
+2025-12-01T16:56:45.816450 - buscar_aulas_com_id_por_data normalize error: name '_normalize_aula' is not defined
+2025-12-01T16:57:21.126004 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T16:57:21.126732 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T17:03:36.032286 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:03:36.033769 - Fallback schema ensured
+2025-12-01T17:03:37.101913 - supabase_helpers imported
+2025-12-01T17:03:37.115974 - Background sync started
+2025-12-01T17:03:47.897546 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T17:03:47.898169 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T17:03:48.800736 - buscar_aulas_com_id_por_data normalize error: name '_normalize_aula' is not defined
+2025-12-01T17:03:49.328440 - calcular_receita_mes_atual error: name 'date' is not defined
+2025-12-01T17:03:49.328902 - calcular_despesas_mes_atual error: name 'date' is not defined
+2025-12-01T17:16:09.124665 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:16:10.668380 - supabase_helpers imported
+2025-12-01T17:16:10.675942 - Fallback schema ensured
+2025-12-01T17:16:11.823821 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:16:12.638563 - contar_alunos_ativos error: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:19:09.210499 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:19:10.234345 - supabase_helpers imported
+2025-12-01T17:19:10.235840 - Fallback schema ensured
+2025-12-01T17:19:11.029572 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:21:36.749244 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:21:37.735176 - supabase_helpers imported
+2025-12-01T17:21:37.736705 - Fallback schema ensured
+2025-12-01T17:21:38.891653 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:21:39.919636 - contar_alunos_ativos: supabase direct query failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:23:58.480408 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:23:59.484707 - supabase_helpers imported
+2025-12-01T17:23:59.486296 - Fallback schema ensured
+2025-12-01T17:30:24.134611 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:30:25.409632 - supabase_helpers imported
+2025-12-01T17:30:25.411247 - Fallback schema ensured
+2025-12-01T17:30:25.424684 - Background sync started
+2025-12-01T17:30:26.407039 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:30:35.549280 - contar_alunos_ativos: supabase direct query failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:30:37.683890 - contar_alunos_ativos: supabase direct query failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:30:41.570168 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:30:56.811262 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:31:01.327531 - buscar_instrutor_por_nome supabase error: {'message': 'column instrutor.nome does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:31:01.342021 - Enqueued op aula client_id=ef82329b-c400-4d62-9b8e-0a299e31b124
+2025-12-01T17:31:12.039266 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:31:27.327776 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:31:42.568415 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:31:57.801038 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:32:13.201402 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:32:28.490100 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:32:43.914188 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:32:59.205623 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:33:14.461172 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:33:29.707987 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:33:44.974317 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:34:00.502702 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:34:15.761468 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:34:31.054361 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:34:46.286069 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:35:01.545268 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:35:16.808498 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:35:32.068170 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:35:47.515583 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:36:02.777871 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:36:18.012889 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:36:33.260191 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:36:48.535361 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:37:03.794748 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:37:19.061990 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:37:34.484773 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:37:49.739276 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:38:05.022961 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:38:20.301556 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:38:35.517086 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:38:50.743325 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:39:05.962808 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:39:21.366046 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:39:36.625174 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:39:51.862547 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:40:07.119752 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:40:22.368790 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:40:37.608507 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:40:52.839415 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:41:08.534705 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:41:23.782636 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:41:39.063732 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:41:54.274457 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:09.512426 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:16.517912 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:42:17.572348 - supabase_helpers imported
+2025-12-01T17:42:17.574161 - Fallback schema ensured
+2025-12-01T17:42:18.164216 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:18.856230 - contar_alunos_ativos: supabase direct query failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:39.519832 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:42:40.754279 - supabase_helpers imported
+2025-12-01T17:42:40.755863 - Fallback schema ensured
+2025-12-01T17:42:40.773272 - Background sync started
+2025-12-01T17:42:41.521002 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:45.658569 - contar_alunos_ativos: supabase direct query failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:47.394405 - contar_alunos_ativos: supabase direct query failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:56.941835 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:59.018694 - buscar_instrutor_por_nome supabase error: {'message': 'column instrutor.nome does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:42:59.028466 - Enqueued op aula client_id=55a158e4-324d-46a2-b2fe-f7a15169c0b7
+2025-12-01T17:48:14.100252 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:48:15.247311 - supabase_helpers imported
+2025-12-01T17:48:15.249232 - Fallback schema ensured
+2025-12-01T17:48:16.333514 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T17:55:23.217560 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T17:55:24.875055 - supabase_helpers imported
+2025-12-01T17:55:24.876615 - Fallback schema ensured
+2025-12-01T18:02:39.408562 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T18:02:40.393024 - supabase_helpers imported
+2025-12-01T18:02:40.394603 - Fallback schema ensured
+2025-12-01T18:02:51.708476 - SQLite fallback opened at C:\Users\kaio.khaa\Downloads\Projeto-Integrador-main\Projeto-Integrador-main\Projeto-Integrador-main\data_local.db
+2025-12-01T18:02:52.751483 - supabase_helpers imported
+2025-12-01T18:02:52.752988 - Fallback schema ensured
+2025-12-01T18:02:52.765807 - Background sync started
+2025-12-01T18:02:53.371167 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
+2025-12-01T18:03:08.535198 - is_supabase_available check failed: {'message': 'column aluno.id does not exist', 'code': '42703', 'hint': None, 'details': None}
